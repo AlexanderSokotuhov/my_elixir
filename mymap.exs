@@ -19,9 +19,16 @@ defmodule Mymap do
 
 
   def mymap(acc, [h|t]) do
-    acc = h+2
+
+
+
+    acc = acc ++ [h+2]
+
+
     mymap(acc, t)
+
     IO.puts("this is step3, #{acc}")
+
   end
 end
 
