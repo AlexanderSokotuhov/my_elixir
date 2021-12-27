@@ -1,6 +1,14 @@
-def get_requester(conn) do
-  case get_claims(conn) do
-    %{"sub" => <<auth0_client_id::bytes-size(32)>> <> "@clients"} -> Repo.get_by(APIClient, auth0_client_id: auth0_client_id)
-    %{"sub" => auth0_user_id} -> Repo.get_by(User, auth0_user_id: auth0_user_id)
+defmodule Recursion do
+
+  def recursion([], result) do
+     result
+  end
+
+  def recursion(list, result) do
+    [first_elem | tail] = list
+    new_result = first_elem*2
+    recursion(tail, new_result)
   end
 end
+
+Recursion.recursion.result(list: [1,2,3])

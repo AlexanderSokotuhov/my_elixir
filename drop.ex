@@ -14,3 +14,17 @@ defmodule Drop do
     velocity
   end
 end
+
+
+
+defmodule Count do
+  def countup(z) when z <= 10 do
+    countup(z+2)
+  end
+
+  def countup(z) when z > 10 do
+    IO.puts("Reasonable...")
+  end
+end
+
+Count.countup(3)

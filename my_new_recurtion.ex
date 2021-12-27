@@ -1,15 +1,18 @@
-defmodule Recursion do
 
-  def recursion([], total) do
-     total
+# it works
+# recursion without acc
+
+defmodule MySpisoc do
+  def recurtion(list) do
+    priv_plus2(list)
   end
 
-  def recursion(list, total) do
-    [first_elem | tail] = list
-    new_total = first_elem*2
-    recursion(tail, new_total)
+  defp priv_plus2([]), do: []
+
+  defp priv_plus2([h | t]) do
+    [h+2 | priv_plus2(t)]
   end
 end
 
-Recursion.recursion.total
-list = [1,2,3]
+
+  MySpisoc.recurtion([1,2,3])
