@@ -1,4 +1,4 @@
-defmodule Math do
+defmodule MyMap do
   def sum_list([head | tail], accumulator) do
     sum_list(tail, head + 2)
     IO.puts " this is #{accumulator}"
@@ -10,4 +10,4 @@ defmodule Math do
 end
 
 
-IO.puts Math.sum_list([1, 2, 3], 0)
+IO.puts MyMap.sum_list([1, 2, 3], 0)

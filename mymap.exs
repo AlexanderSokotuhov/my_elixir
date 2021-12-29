@@ -1,35 +1,15 @@
-defmodule Mymap do
-
-
-  def mymap([]) do
-
-    IO.puts("this is 0")
+defmodule MyMap do
+  def recurtion(list) do
+    priv_plus2(list)
   end
 
+  defp priv_plus2([]), do: []
 
-  def mymap(acc, []) do
-    acc
-    IO.puts("this is step1, #{acc}")
-  end
-
-  def mymap(list) do
-    mymap([], list)
-    IO.puts("this is step2, #{list}")
-  end
-
-
-  def mymap(acc, [h|t]) do
-
-
-
-    acc = acc ++ [h+2]
-
-
-    mymap(acc, t)
-
-    IO.puts("this is step3, #{acc}")
-
+  defp priv_plus2([h | t]) do
+   result = [h+2 | priv_plus2(t)]
+    IO.inspect result
   end
 end
 
-  Mymap.mymap([1,2,3])
+
+MyMap.recurtion([1,2,3])
