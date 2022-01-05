@@ -14,7 +14,7 @@ defmodule Game do
         IO.puts "won!"
     end
 
-    def attempt(wrong_guess) do
+    def attempt(_wrong_guess) do
         IO.puts "That is not correct!"
 
         guess = IO.gets "Try again: "
