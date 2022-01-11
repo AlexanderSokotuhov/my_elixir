@@ -1,13 +1,15 @@
 defmodule MyMap do
-  def sum_list([head | tail], accumulator) do
-    sum_list(tail, head + 2)
-    IO.puts " this is #{accumulator}"
+
+  def sum_list([]), do: []
+
+
+  def sum_list([head | tail]) do
+    [head + 2 | sum_list(tail)]
+
   end
 
-  def sum_list([], accumulator) do
-    accumulator
-  end
+
 end
 
 
-IO.puts MyMap.sum_list([1, 2, 3], 0)
+IO.puts MyMap.sum_list([1, 2, 3])
