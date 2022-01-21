@@ -98,3 +98,10 @@ defmodule MyNewList do
  touching_ghost
   end
 end
+
+
+defmodule Secrets do
+  def secret_add(secret) do
+    # Please implement the secret_add/1 function
+    variable = &(&1 + &1)
+  end
