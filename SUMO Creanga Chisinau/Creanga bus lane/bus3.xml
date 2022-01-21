@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2021-11-19 10:32:44 by Eclipse SUMO netedit Version 1.10.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="/home/alex/Documents/Documents/4.%20Tehnical/SUMO/All%20Sumo/Creanga%20Chisinau/Creanga%20bus%20lane/creanga.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="/home/alex/Documents/Documents/4.%20Tehnical/SUMO/All%20Sumo/Creanga%20Chisinau/Creanga%20bus%20lane/creanga.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="false"/>
+    </pedestrian>
+
+    <netedit>
+        <additional-files value="/home/alex/Documents/Documents/4.%20Tehnical/SUMO/All%20Sumo/Creanga%20Chisinau/Creanga%20bus%20lane/bus3.xml"/>
+    </netedit>
+
+    <report>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <busStop id="busStop_-660529571_0_1" lane="-660529571_0" startPos="21.46" endPos="31.46"/>
+    <busStop id="busStop_24848597_0_0" lane="24848597_0" startPos="6.55" endPos="16.55"/>
+</additional>

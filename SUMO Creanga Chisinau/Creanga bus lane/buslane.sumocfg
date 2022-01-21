@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2021-11-19 10:20:52 by Eclipse SUMO GUI Version 1.10.0
+-->
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="/home/alex/Documents/Documents/4.%20Tehnical/SUMO/All%20Sumo/Creanga%20Chisinau/Creanga%20bus%20lane/creanga.net.xml"/>
+        <route-files value="/home/alex/Documents/Documents/4.%20Tehnical/SUMO/All%20Sumo/Creanga%20Chisinau/Creanga%20bus%20lane/creanga.rou.xml,/home/alex/Documents/Documents/4.%20Tehnical/SUMO/All%20Sumo/Creanga%20Chisinau/Creanga%20bus%20lane/creanga2.rou.xml"/>
+        <additional-files value="/home/alex/Documents/Documents/4.%20Tehnical/SUMO/All%20Sumo/Creanga%20Chisinau/Creanga%20bus%20lane/bus3.xml"/>
+    </input>
+
+</configuration>
