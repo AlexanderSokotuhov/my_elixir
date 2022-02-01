@@ -20,24 +20,15 @@ def score({x, y}) when x in (-1..1) and y in (-1..1), do: 10
 """
   def score({x, y}) do
       cond do
-        x  == 0.8 and y == -0.8 ->
-          5
-        x == -3.6 and y == -3.6 ->
-          1
+        x*x + y*y <= 1.0*1.0 ->
+            10
 
-        x == -9 and y == 9 ->
-          0
-        x == 7.1 and y == -7.1 ->
-          0
+        x*x + y*y <= 5.0*5.0 ->
+            5
 
-        x <= 1.0 and x >= -1.0 and y <= 1.0 and y >= -1 ->
-          10
-
-        x <= 5.0 and x >= -5 and y <= 5.0 and y >= -5.0 ->
-         5
-
-        x <= 10.0 and x >= -10.0 and y <= 10.0 and y >= -10.0 ->
+        x*x + y*y <= 10.0*10.0 ->
             1
+
 
         true -> 0
       end
